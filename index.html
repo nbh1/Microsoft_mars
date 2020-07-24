@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tic-Tac-Toe AI</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'ui.css'>
+    </head>
+
+    <body>
+        <div class = 'main-container'>
+            <div class = 'board'>
+                <!-- data-indx following cell divs represents cell index in 1D array representation -->
+                <div class='cell' data-indx = "0" ></div>
+                <div class='cell' data-indx = "1" ></div>
+                <div class='cell' data-indx = "2" ></div>
+                <div class='cell' data-indx = "3" ></div>
+                <div class='cell' data-indx = "4" ></div>
+                <div class='cell' data-indx = "5" ></div>
+                <div class='cell' data-indx = "6" ></div>
+                <div class='cell' data-indx = "7" ></div>
+                <div class='cell' data-indx = "8" ></div>
+            </div>
+
+            <div class = 'control'>
+                <!-- div.intial displays the starting controls -->
+
+                <div class = 'intial'>
+                    <div class = 'difficulty'>
+                        <span class = 'level not-selected' id = "easy">Easy</span>
+                        <span class = 'level not-selected' id = "medium">Medium</span>
+                        <span class = 'level not-selected' id = "hard">Hard</span>
+                    </div>
+
+                    <div class='start'> PLAY </div>
+                   
+                </div>
+
+                <!-- div.ingame displays in-game messages and controls -->
+                <div class = 'ingame' id="human">X MUST MOVE</div>
+                <div class = 'ingame' id="ai">O MUST MOVE</div>
+                <div class = 'ingame' id="won">X won !</div>
+                <div class = 'ingame' id="lost">O won !</div>
+                <div class = 'ingame' id="draw">It's a Draw</div>
+                 <button class='reset'> RESET </button>
+            </div>
+        </div>
+        <div>
+        	"To play Against a human,"
+        	<a href="index_human.html"> Click Here</a>
+        </div>
+         <script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+
+    </body>
+</html>
+
